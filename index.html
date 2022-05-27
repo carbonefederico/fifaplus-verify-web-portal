@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fifa+</title>
+    <script id="stPingId"
+        src="https://assets.pingone.com/p1f/web-sdk/4.3.0/p1f-sdk.js?appId=2bdaf281-44e3-4009-9e9b-b9e33777f5df"
+        defer></script>
+    <script type="text/javascript" src="https://devsdk.singularkey.com/latest/singularkey.js"></script>
+    <script type="text/javascript" src="src/dav.js"></script>
+    <script type="text/javascript" src="src/index.js"></script>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="spinner hidden" id="spinner">
+        <div class="spinner-icon icon fa-solid fa-spinner fa-6x fa-spin"></div>
+    </div>
+    <div id="main-container" class="main-container">
+        <div id="navbar" class="navbar">
+            <div class="logo">
+                <img id="logo" src="assets/logo.svg" alt="">
+            </div>
+            <div class="main-menu" id="functions-menu">
+                <div class="navbar-button">Originals</div>
+                <div class="navbar-button">News</div>
+                <div class="navbar-button">Match Center</div>
+                <div class="navbar-button">Tickets</div>
+            </div>
+            <div class="user-menu" id="user-menu">
+                <div id="login-button" class="navbar-button">Login</div>
+                <div id="register-button" class="navbar-button">Register</div>
+                <div id="username" class="navbar-button hidden"></div>
+                <div id="logout" class="navbar-button hidden">Logout</div>
+            </div>
+        </div>
+        <div id="landing" class="landing">
+            <div id="landing-message" class="landing-message">
+                <h1 class="landing-message-title">Everything football</h1>
+                <p class="landing-message-text">Sign up to access our original shows, documentaries, and the greatest football archive ever</p>
+                <div id="landing-message-button" class="button landing-message-button">Start</div>
+            </div>
+        </div>
+        <div id="home" class="home hidden">
+            <div id="landing-message" class="landing-message">
+                <h1 class="landing-message-title">Tickets</h1>
+                <p class="landing-message-text">Buy or book your ticket</p>
+                <div id="buy-ticket" class="button landing-message-button">Start</div>
+            </div>
+        </div>
+        <div id="home" class="home hidden">
+            <div id="landing-message" class="landing-message">
+                <p class="landing-message-text tickets">Tickets Home</p>
+            </div>
+        </div>
+    </div>
+    <div id="widget" class="skWidget"></div>
+</body>
+
+</html>

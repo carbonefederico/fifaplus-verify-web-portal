@@ -1,0 +1,465 @@
+:root {
+  --border-radius: 30px;
+  --title-color: #129DFF;
+  --button-background: #1199fa;
+  --dark-blue-background: rgba(6, 17, 33, 1);
+  --light-blue-background: #143364;
+  --icon-color: #0B558D;
+}
+
+body {
+  background-color: white;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: aktiv-grotesk, Arial, Helvetica, sans-serif;
+  line-height: 20px;
+  margin: 0;
+  overflow: hidden;
+  
+}
+
+a {
+  background-color: transparent;
+  border: 0px;
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+input {
+  color: #ccc;
+  border-radius: var(--border-radius);
+  color: #202732;
+  padding-left: var(--border-radius);
+  font-size: 1.3rem;
+}
+
+.wide-input {
+  width: 100%;
+}
+
+.main-container {
+  height: 100vh;
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+
+.main-container-tickets {
+  height: 100vh;
+  background-image: url("tickets.webp");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+
+.landing-message {
+  color: white;
+  padding-left: 200px;
+  padding-top: 200px;
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  height: 300px;
+  gap: 40px;
+  align-items: start;
+}
+
+
+.landing-message-title {
+  font-size: 3rem;
+  color: var(--title-color)
+}
+
+.landing-message-text {
+  font-size: 1.2rem;
+  text-align: start;
+}
+
+.tickets  {
+  font-size: 3rem;
+  text-align: start;
+  color:black;
+}
+
+.button {
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background: linear-gradient(111.98deg,#00b8ff 18.07%,#1574c4 90.31%);
+  background-color: var(--button-background);
+  border: 0px;
+  border-radius: var(--border-radius);
+  text-align: center;
+  cursor: pointer;
+}
+
+.landing-message-button {
+  padding-top: 20px;
+  height: 40px;
+  width: 200px;
+}
+
+.logo img {
+  height: 40px;
+  padding: 10px;
+}
+
+.user-menu {
+  display: flex;
+  gap: 10px;
+}
+
+.main-menu {
+  display: flex;
+  gap: 40px;
+}
+
+.logout {
+  color: white;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.427);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.navbar-button {
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.user-label {
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: white;
+  border-radius: 20px;
+  width: 150px;
+  padding: 0.5rem;
+  padding-left: 1rem !important;
+}
+
+.home {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  margin-left: 10px;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.565);
+}
+
+
+.deposit-button {
+  padding-top: 20px;
+  height: 40px;
+  width: 150px;
+}
+
+.buy-button {
+  padding-top: 20px;
+  height: 40px;
+  width: 150px;
+}
+
+.quotes-title {
+  font-size: 1.5rem;
+  color: var(--title-color);
+  margin: 20px;
+}
+
+.quote-text {
+  color: white;
+  text-align: left;
+}
+
+.coin {
+  width: 150px;
+
+}
+.quote-green {
+  color: green !important;
+  font-weight: bold;
+}
+
+.quote-red {
+  color: red !important;
+  font-weight: bold;
+}
+
+.deposit-form {
+  display: flex;
+  gap: 15px;
+  margin: 20px 20px;
+}
+
+
+
+.spinner {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.449);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.spinner-icon {
+  margin: auto;
+  color: white;
+  opacity: 1.0;
+}
+
+.home-image {
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+.dav-modal {
+  background: white;
+  box-shadow: 0px 0px 3px black;
+  border: 0px;
+  padding: 50px;
+  border-radius: var(--border-radius);
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.dav-moadal-tv {
+  background-color: var(--dark-blue-background) !important;
+}
+
+.dav-header {
+  margin-bottom: 40px;
+  text-align: center;
+  font-style: italic;
+}
+
+.dav-body {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.dav-idv-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dav-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  min-width: 100%;
+}
+
+.dav-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.input-checkbox {
+  border-style: solid;
+  border-width: 1px;
+  width: 20px;
+  height: 20px;
+}
+
+.text-input {
+  height: 50px;
+  margin-bottom: 20px;
+  border-radius: var(--border-radius);
+  border-style: solid;
+  border-width: 1px;
+  background-color: white;
+  color: black;
+  font-size: 1rem;
+  padding-left: 20px;
+}
+
+.dav-form select {
+  height: 50px;
+  margin-bottom: 20px;
+  border-radius: var(--border-radius);
+  border-style: solid;
+  border-width: 1px;
+  background-color: white;
+  color: black;
+  font-size: 1rem;
+  padding-left: 20px;
+  padding-left: 20px;
+}
+
+.dav-form label {
+  margin-bottom: 3px;
+}
+
+.dav-button {
+  color: white;
+  font-size: 1.1rem;
+  background-color: var(--button-background);
+  border: 0px;
+  margin-top: 10px;
+  height: 60px;
+  border-radius: var(--border-radius);
+  width: 100%;
+}
+
+.dav-footer-links {
+  display: flex;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.dav-button-link {
+  color: black;
+  cursor: pointer;
+  background: transparent;
+  border-style: hidden;
+  font-size: 0.8rem;
+}
+
+.dav-split-container {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+.dav-legacy-auth {
+  width: 400px;
+}
+
+.dav-divider {
+  background-color: grey;
+  width: 2px;
+  height: 400px;
+  margin-top: 80px;
+}
+
+.dav-qr-code-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.qr-code {
+  margin-top: 50px;
+  width: 300px;
+}
+
+div[class*="css-1"] {
+  background-color: var(--icon-color) !important;
+}
+
+p {
+  text-align: center;
+  font-style: italic;
+  font-size: 1rem;
+}
+
+.dav-nav-progress {
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.dav-nav-progress-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+}
+
+.dav-progress-icon {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  background-image: linear-gradient(-45deg,
+      var(--button-background) 0%,
+      var(--dark-blue-background) 100%);
+  border: 5px solid;
+  border-color: rgb(244, 244, 244);
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.dav-profile-attributes {
+  margin-top: 50px;
+  font-size: 1.3rem;
+}
+
+.dav-profile-table {
+  text-align: left;
+}
+
+td {
+  padding: 5px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.future {
+  background-image: linear-gradient(-270deg,
+      rgb(206, 206, 206) 0%,
+      rgb(218, 218, 218) 100%) !important;
+}
+
+.dav-icon-text {
+  margin-top: 15px;
+}
+
+.dav-progress-text {
+  font-weight: bold;
+}
+
+.styles_messageScreenIcon__1OC-X {
+  visibility: hidden;
+}
+
+.styles_hftPoweredByText__3_s0Y {
+  visibility: hidden;
+}
+
+.css-0 {
+  text-align: center;
+}
+
+.sk-alert {
+  color: red;
+}
+
+.dark-blue {
+  color: var(--icon-color);
+}
